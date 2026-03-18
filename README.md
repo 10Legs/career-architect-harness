@@ -1,12 +1,17 @@
 # Career Architect Harness
 
-A multi-agent AI harness built for Claude Code that transforms job seekers' skills and experiences into compelling career narratives. The harness orchestrates a team of specialized agents, each owning a discrete step in the resume and career strategy workflow.
+A multi-agent AI harness built for **Claude Code CLI** and **Gemini CLI** that transforms job seekers' skills and experiences into compelling career narratives. The harness orchestrates a team of specialized agents, each owning a discrete step in the resume and career strategy workflow.
 
 ---
 
 ## How It Works
 
-The harness is a collection of Claude Code primitives — **agents**, **commands**, and **skills** — wired together into a structured workflow. When you run a slash command, Claude Code activates the appropriate specialist agent, which draws on domain-skill knowledge to produce a specific output file. Each step gates the next.
+The harness is a collection of AI primitives — **agents**, **commands/workflows**, and **skills** — wired together into a structured workflow. 
+
+- **Claude Code CLI**: Uses `CLAUDE.md` and slash commands in `.claude/commands/`.
+- **Gemini CLI**: Uses `GEMINI.md` and follows the operational workflows described therein.
+
+Both tools activate the same specialist agents, which draw on domain-skill knowledge to produce specific output files. Each step gates the next.
 
 ```
 /consult → /skill-inventory → /analyze-job → /build-resume → /career-strategy
