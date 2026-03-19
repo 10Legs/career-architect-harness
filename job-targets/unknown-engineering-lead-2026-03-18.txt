@@ -1,0 +1,7 @@
+Engineering Lead - Crypto Exchange (Confidential)
+
+Responsibilities:
+- Lead the end-to-end technical design and architecture.
+- Design and implement trading platform.
+- Own the entire technical stack from backend to frontend systems.
+- Take full ownership of the technical vision, architecture and execution of a crypto exchange.
