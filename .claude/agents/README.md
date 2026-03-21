@@ -11,6 +11,7 @@
 | Narrative Crafter | `narrative-crafter.md` | Invoked by Resume Architect automatically |
 | QA Reviewer | `qa-reviewer.md` | Final gate before client delivery |
 | Career Strategist | `career-strategist.md` | `/career-strategy` — job search planning |
+| Interview Strategist | `interview-strategist.md` | `/interview-prep` — interview preparation, mock interviews, delivery coaching |
 
 ## Model Capability Requirements
 
@@ -19,7 +20,7 @@ Agents specify model requirements as capability descriptions rather than specifi
 - **Conversational/Fast** (Intake, Skills Analyst, Keyword Researcher): Optimized for interactive dialogue and structured output
 - **High-Capability** (Resume Architect, Narrative Crafter): Deep reasoning, strong writing, nuanced judgment
 - **Analytical/Precise** (QA Reviewer): Strong attention to detail, pattern recognition, high accuracy
-- **Broad Knowledge** (Career Strategist): Wide industry expertise, strategic reasoning, human psychology
+- **Broad Knowledge** (Career Strategist, Interview Strategist): Wide industry expertise, strategic reasoning, human psychology, communication coaching
 
 ## Workflow Gates
 
