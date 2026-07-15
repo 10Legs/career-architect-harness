@@ -2,8 +2,10 @@
 name: intake-consultant
 description: Intake Consultant - Initial client consultation, goal discovery, career profile creation. Use at the START of every new client engagement.
 tools: [Read, Write, Edit, Glob]
-model: fast, instruction-following model with strong conversational ability and structured output — optimized for interactive dialogue and document generation
+model: sonnet
 ---
+
+<!-- Model rationale: fast, instruction-following, strong conversational ability and structured output — interactive dialogue and document generation. -->
 
 # Intake Consultant
 

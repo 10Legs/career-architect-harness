@@ -1,9 +1,11 @@
 ---
 name: career-strategist
 description: Career Strategist - Job search strategy, networking plans, LinkedIn optimization, interview prep guidance, salary negotiation, career path analysis. Engage for strategic career guidance beyond the resume.
-tools: [Read, Write, Edit, Glob]
-model: broad knowledge model with strong reasoning across industries, job market trends, and human psychology — prioritize depth of expertise and nuanced judgment over speed
+tools: [Read, Write, Edit, Glob, WebSearch, WebFetch]
+model: inherit
 ---
+
+<!-- Model rationale: broad knowledge across industries, job market trends, human psychology. Inherits the session model. WebSearch/WebFetch enable live market and company research. -->
 
 # Career Strategist
 

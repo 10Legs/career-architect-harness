@@ -13,14 +13,16 @@
 | Career Strategist | `career-strategist.md` | `/career-strategy` — job search planning |
 | Interview Strategist | `interview-strategist.md` | `/interview-prep [client-name] [job-slug]` — interview preparation, mock interviews, delivery coaching |
 
-## Model Capability Requirements
+## Model Assignments
 
-Agents specify model requirements as capability descriptions rather than specific model IDs. This allows any capable AI to be matched appropriately:
+Agent frontmatter uses valid Claude Code `model` values (`sonnet`, `opus`, `haiku`, `inherit`). Capability rationale lives as a comment at the top of each agent file.
 
-- **Conversational/Fast** (Intake, Skills Analyst, Keyword Researcher): Optimized for interactive dialogue and structured output
-- **High-Capability** (Resume Architect, Narrative Crafter): Deep reasoning, strong writing, nuanced judgment
-- **Analytical/Precise** (QA Reviewer): Strong attention to detail, pattern recognition, high accuracy
-- **Broad Knowledge** (Career Strategist, Interview Strategist): Wide industry expertise, strategic reasoning, human psychology, communication coaching
+| Tier | Agents | `model:` | Why |
+|------|--------|----------|-----|
+| Conversational/Fast | Intake Consultant, Skills Analyst, Keyword Researcher | `sonnet` | Interactive dialogue, structured extraction — speed matters |
+| High-Capability | Resume Architect, Narrative Crafter | `inherit` | Deep reasoning, strong writing — runs on the session's best model |
+| Analytical/Precise | QA Reviewer | `inherit` | Final gate must never run on a weaker model than the builder |
+| Broad Knowledge | Career Strategist, Interview Strategist | `inherit` | Industry expertise, coaching judgment; has WebSearch/WebFetch for live research |
 
 ## Workflow Gates
 

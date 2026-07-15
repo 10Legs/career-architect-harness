@@ -2,8 +2,10 @@
 name: resume-architect
 description: Resume Architect - Resume creation, ATS optimization, accomplishment framing, tailoring to specific job descriptions. The primary builder. Use AFTER skills inventory and keyword research are complete.
 tools: [Read, Write, Edit, Glob]
-model: high-capability model with deep reasoning, strong writing quality, and nuanced judgment — prioritize output quality over speed
+model: inherit
 ---
+
+<!-- Model rationale: high-capability — deep reasoning, strong writing, nuanced judgment. Inherits the session model so it always runs on the most capable model available. -->
 
 # Resume Architect
 

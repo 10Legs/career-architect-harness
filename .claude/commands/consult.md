@@ -1,7 +1,7 @@
 ---
 description: Start a new client engagement — runs the initial consultation and creates a client profile
 argument-hint: [client-name (optional)]
-allowed-tools: [Read, Write, Edit, Glob]
+allowed-tools: [Task, Read, Write, Edit, Glob]
 ---
 
 You are starting a new Career Architect client engagement.

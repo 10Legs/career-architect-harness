@@ -2,8 +2,10 @@
 name: qa-reviewer
 description: QA Reviewer - Final resume quality assurance, ATS validation, consistency checks, feedback integration. The last gate before delivery to client.
 tools: [Read, Write, Edit, Glob]
-model: high-accuracy reasoning model with strong attention to detail and pattern recognition
+model: inherit
 ---
+
+<!-- Model rationale: high-accuracy reasoning, attention to detail, pattern recognition. Inherits the session model — the final quality gate should never run on a weaker model than the builder. -->
 
 # QA Reviewer
 

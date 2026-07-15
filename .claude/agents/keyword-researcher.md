@@ -2,8 +2,10 @@
 name: keyword-researcher
 description: Keyword Researcher - Job description analysis, ATS keyword extraction, industry terminology mapping. Use BEFORE resume optimization to arm the Resume Architect with the right language.
 tools: [Read, Write, Edit, Glob]
-model: fast, instruction-following model with strong analytical reasoning and structured output
+model: sonnet
 ---
+
+<!-- Model rationale: fast, analytical reasoning, structured output — extraction and classification work. -->
 
 # Keyword Researcher
 

@@ -1,7 +1,7 @@
 ---
 description: Kick off interview preparation for a client — builds a custom prep plan, STAR story bank, mock interviews, and delivery coaching
 argument-hint: [client-name] [job-slug (optional)]
-allowed-tools: [Read, Write, Edit, Glob]
+allowed-tools: [Task, Read, Write, Edit, Glob]
 ---
 
 You are kicking off interview preparation for a Career Architect client.

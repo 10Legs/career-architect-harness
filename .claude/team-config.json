@@ -1,6 +1,6 @@
 {
   "team": "Career Architect",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "philosophy": "Client First, Evidence Always",
   "agents": [
     {
@@ -44,6 +44,12 @@
       "role": "Job search strategy and career guidance",
       "trigger": "/career-strategy command or when client needs search guidance",
       "exit_state": "Strategy Delivered"
+    },
+    {
+      "name": "interview-strategist",
+      "role": "Interview preparation, mock interviews, STAR coaching, delivery feedback, negotiation",
+      "trigger": "/interview-prep command or when client has an upcoming interview",
+      "exit_state": "Interview Preparation Complete"
     }
   ],
   "commands": [
@@ -52,18 +58,19 @@
     { "name": "analyze-job", "description": "Analyze a job description for keywords" },
     { "name": "build-resume", "description": "Build or optimize a tailored resume" },
     { "name": "review-resume", "description": "Critically review an existing resume" },
-    { "name": "career-strategy", "description": "Build a job search strategy" }
+    { "name": "career-strategy", "description": "Build a job search strategy" },
+    { "name": "interview-prep", "description": "Run interview preparation — prep plan, STAR bank, mocks" }
   ],
   "skills": [
     "ats-optimization",
     "resume-patterns",
     "skill-translation",
     "career-strategy-patterns",
-    "interview-prep",
+    "interview-frameworks",
     "linkedin-optimization"
   ],
   "workflow": [
-    "consult → skill-inventory → analyze-job → build-resume → career-strategy"
+    "consult → skill-inventory → analyze-job → build-resume → career-strategy → interview-prep"
   ],
   "stop_the_line_conditions": [
     "Career goals undefined — route to intake-consultant",

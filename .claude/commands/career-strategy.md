@@ -1,7 +1,7 @@
 ---
 description: Build a comprehensive job search strategy and career action plan
 argument-hint: [client-name]
-allowed-tools: [Read, Write, Edit, Glob]
+allowed-tools: [Task, Read, Write, Edit, Glob]
 ---
 
 You are building a job search strategy for a Career Architect client.

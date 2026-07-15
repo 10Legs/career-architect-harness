@@ -1,7 +1,7 @@
 ---
 description: Run a comprehensive skill inventory for a client
 argument-hint: [client-name]
-allowed-tools: [Read, Write, Edit, Glob]
+allowed-tools: [Task, Read, Write, Edit, Glob]
 ---
 
 You are running a skill inventory for a Career Architect client.

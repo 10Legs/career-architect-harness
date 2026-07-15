@@ -1,7 +1,7 @@
 ---
 description: Analyze a job description — extract ATS keywords, requirements, and gaps vs. client profile
 argument-hint: [client-name] [job-description-text or filename]
-allowed-tools: [Read, Write, Edit, Glob]
+allowed-tools: [Task, Read, Write, Edit, Glob]
 ---
 
 You are running job description analysis for a Career Architect client.

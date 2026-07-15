@@ -1,7 +1,7 @@
 ---
 description: Build or optimize a resume tailored to a specific target role
 argument-hint: [client-name] [job-target-slug (optional)]
-allowed-tools: [Read, Write, Edit, Glob]
+allowed-tools: [Task, Read, Write, Edit, Glob]
 ---
 
 You are building a tailored resume for a Career Architect client.

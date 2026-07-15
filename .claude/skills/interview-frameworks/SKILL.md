@@ -1,6 +1,6 @@
 ---
-name: interview-prep
-description: Interview preparation frameworks, common question banks, STAR story coaching, and behavioral interview guidance. Invoke when helping clients prepare for interviews.
+name: interview-frameworks
+description: Interview preparation frameworks, common question banks, STAR story coaching, and behavioral interview guidance. Invoke when helping clients prepare for interviews. (Named interview-frameworks to avoid colliding with the /interview-prep command.)
 allowed-tools: Read, Glob
 ---
 
