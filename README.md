@@ -158,17 +158,17 @@ Every file the harness produces:
 
 | File | Contents |
 |------|----------|
-| `profile/profile.md` | Your career goals, background, target roles |
-| `profile/skills.md` | Full skill inventory with gap analysis |
-| `profile/job-search-strategy.md` | Channels, company tiers, 30-day plan |
+| `job-targets/{slug}/cover-letter.md` | Targeted cover letter |
 | `job-targets/{slug}/interview-prep.md` | Prep plan, STAR bank, mock scores, action items |
-| `profile/amplify-plan.md` | Task inventory, AI plays, measurement log, guardrails |
-| `profile/linkedin-about.md` | LinkedIn About section (one profile, updated per target role) |
 | `job-targets/{slug}/job-description.txt` | The raw job posting |
 | `job-targets/{slug}/keywords.md` | Tier 1–4 keywords, gap analysis, title recommendation |
-| `job-targets/{slug}/resume.md` | ATS-optimized tailored resume |
-| `job-targets/{slug}/cover-letter.md` | Targeted cover letter |
 | `job-targets/{slug}/qa-report.md` | QA review with APPROVED/REVISION status |
+| `job-targets/{slug}/resume.md` | ATS-optimized tailored resume |
+| `profile/amplify-plan.md` | Task inventory, AI plays, measurement log, guardrails |
+| `profile/job-search-strategy.md` | Channels, company tiers, 30-day plan |
+| `profile/linkedin-about.md` | LinkedIn About section (one profile, updated per target role) |
+| `profile/profile.md` | Your career goals, background, target roles |
+| `profile/skills.md` | Full skill inventory with gap analysis |
 
 ## When (which command, which moment)
 
