@@ -1,6 +1,6 @@
 ---
 name: interview-frameworks
-description: Interview preparation frameworks, common question banks, STAR story coaching, and behavioral interview guidance. Invoke when helping clients prepare for interviews. (Named interview-frameworks to avoid colliding with the /interview-prep command.)
+description: Interview preparation frameworks, common question banks, STAR story coaching, and behavioral interview guidance. Invoke when helping the user prepare for interviews. (Named interview-frameworks to avoid colliding with the /interview-prep command.)
 allowed-tools: Read, Glob
 ---
 
@@ -74,7 +74,7 @@ allowed-tools: Read, Glob
 2. Career narrative arc (2–3 sentences — connect the dots)
 3. Why you're here / what you're excited about (1–2 sentences)
 
-**Coach clients to**: End with something forward-looking, not backward-looking.
+**Coach the user to**: End with something forward-looking, not backward-looking.
 
 ### "Why do you want to work here?"
 Must be specific. Three components:

@@ -1,25 +1,25 @@
 ---
 description: Build or optimize a resume tailored to a specific target role
-argument-hint: [client-name] [job-target-slug (optional)]
+argument-hint: [job-target-slug (optional)]
 allowed-tools: [Task, Read, Write, Edit, Glob]
 ---
 
-You are building a tailored resume for a Career Architect client.
+You are building a tailored resume for a Career Architect user.
 
 ## Pre-Flight (Stop-the-Line if missing)
 
 Verify all prerequisites:
 
-1. Client profile: `client-profiles/{client-name}-profile.md` — REQUIRED
-2. Skills inventory: `client-profiles/{client-name}-skills.md` — REQUIRED
+1. User profile: `profile/profile.md` — REQUIRED
+2. Skills inventory: `profile/skills.md` — REQUIRED
 3. Keyword brief: `job-targets/{job-slug}-keywords.md` — REQUIRED
 
 If any are missing:
-- Profile missing → Run `/consult {client-name}` first
-- Skills missing → Run `/skill-inventory {client-name}` first
-- Keywords missing → Run `/analyze-job {client-name}` first
+- Profile missing → Run `/consult` first
+- Skills missing → Run `/skill-inventory` first
+- Keywords missing → Run `/analyze-job` first
 
-Check for existing resume: `client-profiles/{client-name}-existing-resume.*`
+Check for existing resume: `profile/existing-resume.*`
 
 ## Execution
 
@@ -37,7 +37,7 @@ Check for existing resume: `client-profiles/{client-name}-existing-resume.*`
 4. Apply ATS compliance checklist
 5. Enforce length guidelines
 
-Save draft to: `resume-outputs/{client-name}-{job-slug}-resume.md`
+Save draft to: `resume-outputs/{job-slug}-resume.md`
 
 ### Phase 2: Narrative Crafter
 
@@ -54,10 +54,10 @@ Save draft to: `resume-outputs/{client-name}-{job-slug}-resume.md`
 
 ## Output Files
 
-- `resume-outputs/{client-name}-{job-slug}-resume.md`
-- `resume-outputs/{client-name}-{job-slug}-cover-letter.md`
-- `resume-outputs/{client-name}-linkedin-about.md`
-- `resume-outputs/{client-name}-{job-slug}-qa-report.md`
+- `resume-outputs/{job-slug}-resume.md`
+- `resume-outputs/{job-slug}-cover-letter.md`
+- `resume-outputs/linkedin-about.md`
+- `resume-outputs/{job-slug}-qa-report.md`
 
 ## Success Criteria
 
@@ -67,7 +67,7 @@ Save draft to: `resume-outputs/{client-name}-{job-slug}-resume.md`
 - [ ] QA report shows APPROVED status
 - [ ] All output files saved
 
-## Delivery to Client
+## Delivery to User
 
 Present the resume with a brief explanation of key decisions made:
 - Why this structure was chosen

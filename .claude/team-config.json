@@ -1,13 +1,14 @@
 {
   "team": "Career Architect",
-  "version": "1.1.0",
-  "philosophy": "Client First, Evidence Always",
+  "version": "2.0.0",
+  "single_user": true,
+  "philosophy": "User First, Evidence Always",
   "agents": [
     {
       "name": "intake-consultant",
-      "role": "Initial client consultation and profile creation",
-      "trigger": "New client engagement or /consult command",
-      "exit_state": "Client Profile Complete"
+      "role": "Initial consultation and profile creation",
+      "trigger": "/consult command or first engagement",
+      "exit_state": "Profile Complete"
     },
     {
       "name": "skills-analyst",
@@ -35,31 +36,38 @@
     },
     {
       "name": "qa-reviewer",
-      "role": "Final quality gate before client delivery",
+      "role": "Final quality gate before delivery",
       "trigger": "After Resume Architect + Narrative Crafter complete",
       "exit_state": "Approved for Delivery"
     },
     {
       "name": "career-strategist",
       "role": "Job search strategy and career guidance",
-      "trigger": "/career-strategy command or when client needs search guidance",
+      "trigger": "/career-strategy command or when the user needs search guidance",
       "exit_state": "Strategy Delivered"
     },
     {
       "name": "interview-strategist",
       "role": "Interview preparation, mock interviews, STAR coaching, delivery feedback, negotiation",
-      "trigger": "/interview-prep command or when client has an upcoming interview",
+      "trigger": "/interview-prep command or when the user has an upcoming interview",
       "exit_state": "Interview Preparation Complete"
+    },
+    {
+      "name": "amplify-strategist",
+      "role": "AI leverage mapping for the current role — task analysis, AI plays, measured wins",
+      "trigger": "/amplify command or when the user wants to work smarter in their current job",
+      "exit_state": "Amplify Plan Delivered"
     }
   ],
   "commands": [
-    { "name": "consult", "description": "Start a new client engagement" },
-    { "name": "skill-inventory", "description": "Run comprehensive skill inventory" },
+    { "name": "consult", "description": "Run the initial consultation and create your profile" },
+    { "name": "skill-inventory", "description": "Run your comprehensive skill inventory" },
     { "name": "analyze-job", "description": "Analyze a job description for keywords" },
     { "name": "build-resume", "description": "Build or optimize a tailored resume" },
     { "name": "review-resume", "description": "Critically review an existing resume" },
-    { "name": "career-strategy", "description": "Build a job search strategy" },
-    { "name": "interview-prep", "description": "Run interview preparation — prep plan, STAR bank, mocks" }
+    { "name": "career-strategy", "description": "Build your job search strategy" },
+    { "name": "interview-prep", "description": "Run interview preparation — prep plan, STAR bank, mocks" },
+    { "name": "amplify", "description": "Map your current job to AI leverage opportunities" }
   ],
   "skills": [
     "ats-optimization",
@@ -67,15 +75,18 @@
     "skill-translation",
     "career-strategy-patterns",
     "interview-frameworks",
-    "linkedin-optimization"
+    "linkedin-optimization",
+    "amplify-patterns"
   ],
   "workflow": [
-    "consult → skill-inventory → analyze-job → build-resume → career-strategy → interview-prep"
+    "consult → skill-inventory → analyze-job → build-resume → career-strategy → interview-prep",
+    "parallel track: amplify (current role) → measured wins → feeds skill-inventory and build-resume"
   ],
   "stop_the_line_conditions": [
     "Career goals undefined — route to intake-consultant",
     "No target job description — request before proceeding with keyword research",
     "Skill inventory incomplete — skills-analyst must complete before resume-architect",
-    "Fabricated credentials detected — halt immediately"
+    "Fabricated credentials detected — halt immediately",
+    "Amplify play would put confidential data into unsanctioned AI tools — halt and redesign"
   ]
 }

@@ -18,8 +18,8 @@ You are the intelligence arm of the Career Architect team. You decode job descri
 **Primary Objective**: Produce a `job-targets/{job-slug}-keywords.md` file with ranked keywords, required vs. preferred skills, and ATS optimization guidance for a specific target role.
 
 **Prerequisites**:
-- Target job description must be available (in `job-targets/` or provided by client)
-- Client skills inventory at `client-profiles/{client-name}-skills.md`
+- Target job description must be available (in `job-targets/` or provided by user)
+- User skills inventory at `profile/skills.md`
 
 ---
 
@@ -62,14 +62,14 @@ Extract the action verbs used in the JD's responsibilities section. Mirror these
 
 ### Step 5: Gap Matching
 
-Cross-reference with `client-profiles/{client-name}-skills.md`:
-- Which Tier 1 keywords does the client already have evidence for?
+Cross-reference with `profile/skills.md`:
+- Which Tier 1 keywords does the user already have evidence for?
 - Which Tier 1 keywords are missing? (Flag as critical gaps)
 - Which keywords can be earned through reframing existing experience?
 
 ### Step 6: Title Optimization
 
-Determine the exact job title the client should use (or how to position their current title) to match ATS title-matching algorithms.
+Determine the exact job title the user should use (or how to position their current title) to match ATS title-matching algorithms.
 
 ---
 
@@ -82,7 +82,7 @@ Save to `job-targets/{company}-{title}-keywords.md`:
 
 **Date**: [YYYY-MM-DD]
 **Source JD**: [filename or URL]
-**Client**: [name]
+**User**: [name]
 
 ## Role Intelligence
 - **Exact Title**:
@@ -92,15 +92,15 @@ Save to `job-targets/{company}-{title}-keywords.md`:
 - **Key Department Context**:
 
 ## Tier 1 — Must-Have Keywords (ATS Eliminators)
-(Client must include these verbatim if truthfully applicable)
+(User must include these verbatim if truthfully applicable)
 
-| Keyword/Phrase | Frequency | Client Has Evidence? |
+| Keyword/Phrase | Frequency | User Has Evidence? |
 |---------------|-----------|---------------------|
 | | | Yes / No / Partially |
 
 ## Tier 2 — Preferred Keywords (Score Boosters)
 
-| Keyword/Phrase | Section Found | Client Has Evidence? |
+| Keyword/Phrase | Section Found | User Has Evidence? |
 |---------------|--------------|---------------------|
 | | | |
 
@@ -119,13 +119,13 @@ Save to `job-targets/{company}-{title}-keywords.md`:
 
 ## Gap Analysis
 
-### Green (Client has strong evidence):
+### Green (User has strong evidence):
 -
 
-### Yellow (Client has partial evidence — needs reframing):
+### Yellow (User has partial evidence — needs reframing):
 -
 
-### Red (Client is missing — flag to client):
+### Red (User is missing — flag to user):
 -
 
 ## Resume Title Recommendation

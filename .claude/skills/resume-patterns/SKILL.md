@@ -33,7 +33,7 @@ When you don't have exact numbers, use these legitimate approaches:
 
 | Situation | Pattern |
 |-----------|---------|
-| Don't know exact % | "significantly increased" → get closer, ask client |
+| Don't know exact % | "significantly increased" → get closer, ask the user |
 | Process improvement | "Reduced [X] from [Y] to [Z]" |
 | Team size | "Led cross-functional team of [N]" |
 | Budget | "Managed $[X]K/M budget" |
@@ -74,7 +74,7 @@ When you don't have exact numbers, use these legitimate approaches:
 
 ### Pattern 3: Career Pivot (Best when changing fields)
 ```
-[Previous Title] with [X] years in [previous field] transitioning to [target field]. Deep expertise in [transferable skill 1] and [transferable skill 2] uniquely positions [client] to [specific value for new field]. [Connecting accomplishment that bridges old and new].
+[Previous Title] with [X] years in [previous field] transitioning to [target field]. Deep expertise in [transferable skill 1] and [transferable skill 2] uniquely positions [the user] to [specific value for new field]. [Connecting accomplishment that bridges old and new].
 ```
 
 ## Section Templates by Situation

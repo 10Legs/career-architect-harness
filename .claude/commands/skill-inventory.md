@@ -1,24 +1,23 @@
 ---
-description: Run a comprehensive skill inventory for a client
-argument-hint: [client-name]
+description: Run your comprehensive skill inventory
 allowed-tools: [Task, Read, Write, Edit, Glob]
 ---
 
-You are running a skill inventory for a Career Architect client.
+You are running a skill inventory for a Career Architect user.
 
 ## Pre-Flight
 
-1. Verify client profile exists: `client-profiles/{client-name}-profile.md`
-   - If missing, stop and route to `/consult {client-name}` first
+1. Verify user profile exists: `profile/profile.md`
+   - If missing, stop and route to `/consult` first
 
-2. Check if skills inventory already exists: `client-profiles/{client-name}-skills.md`
+2. Check if skills inventory already exists: `profile/skills.md`
    - If yes, ask: "A skills inventory exists — update it or start fresh?"
 
 ## Execution
 
 Invoke the **Skills Analyst** agent:
 
-1. Read the client profile to understand their background and target roles
+1. Read the user profile to understand their background and target roles
 2. Conduct the skill excavation interview:
    - Hard skills (tools, technologies, methods, domain knowledge)
    - Soft skills via behavioral evidence (STAR method probing)
@@ -28,7 +27,7 @@ Invoke the **Skills Analyst** agent:
 
 ## Output
 
-Save to `client-profiles/{client-name}-skills.md`
+Save to `profile/skills.md`
 
 ## Success Criteria
 
@@ -41,5 +40,5 @@ Save to `client-profiles/{client-name}-skills.md`
 ## Next Steps
 
 > "Skill Inventory Complete. Recommended next steps:
-> 1. `/analyze-job {client-name}` — Analyze a target job description
-> 2. `/build-resume {client-name}` — Begin building your resume"
+> 1. `/analyze-job` — Analyze a target job description
+> 2. `/build-resume` — Begin building your resume"

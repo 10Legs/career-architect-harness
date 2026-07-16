@@ -93,7 +93,7 @@ Translation:
 
 ## Phrasing Guide: Reframing Unconventional Experience
 
-| If client says... | Coach them to say... |
+| If the user says... | Coach them to say... |
 |-------------------|---------------------|
 | "I was just a..." | "As a [title], I..." |
 | "It was nothing special" | Ask: "What was the outcome? Who benefited?" |
@@ -108,4 +108,4 @@ Translation must be truthful. The goal is accurate representation, not inflation
 - Do NOT claim expertise not demonstrated
 - Do NOT translate hobbies into professional credentials they aren't
 - DO accurately represent the depth and recency of the skill
-- DO coach clients to be honest about skill level (beginner vs. proficient vs. expert)
+- DO coach the user to be honest about skill level (beginner vs. proficient vs. expert)

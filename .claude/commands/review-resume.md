@@ -1,20 +1,20 @@
 ---
 description: Critically review an existing resume and provide actionable improvement feedback
-argument-hint: [client-name] [resume-filename (optional)]
+argument-hint: [resume-filename (optional)]
 allowed-tools: [Read, Write, Edit, Glob]
 ---
 
-You are reviewing an existing resume for a Career Architect client.
+You are reviewing an existing resume for a Career Architect user.
 
 ## Pre-Flight
 
 1. Locate the resume:
-   - Check `client-profiles/` for `{client-name}-existing-resume.*`
+   - Check `profile/` for `existing-resume.*`
    - Check `resume-outputs/` for any existing drafts
-   - If not found, ask client to share their resume content
+   - If not found, ask user to share their resume content
 
 2. Load context if available:
-   - `client-profiles/{client-name}-profile.md`
+   - `profile/profile.md`
    - `job-targets/` for any target job postings
 
 ## Execution
@@ -50,7 +50,7 @@ Provide a structured critique report — be direct but constructive. For every w
 
 Format:
 ```markdown
-# Resume Review: [Client Name]
+# Resume Review: [Your Name]
 
 ## Overall Assessment
 [1 paragraph honest summary — strengths and key issues]
@@ -76,4 +76,4 @@ Rewritten: [improved bullet]
 ## Next Steps
 
 > "Review complete. Recommended next:
-> `/build-resume {client-name}` — Build an optimized version targeting a specific role"
+> `/build-resume` — Build an optimized version targeting a specific role"
