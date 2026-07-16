@@ -18,14 +18,14 @@ Single-user harness — every agent serves the repository owner. Commands take n
 
 ## Model Assignments
 
-Agent frontmatter uses valid Claude Code `model` values (`sonnet`, `opus`, `haiku`, `inherit`). Capability rationale lives as a comment at the top of each agent file.
+Every agent names its model explicitly (`sonnet`, `opus`, `haiku`). Capability rationale lives as a comment at the top of each agent file.
 
 | Tier | Agents | `model:` | Why |
 |------|--------|----------|-----|
 | Conversational/Fast | Intake Consultant, Skills Analyst, Keyword Researcher | `sonnet` | Interactive dialogue, structured extraction — speed matters |
-| High-Capability | Resume Architect, Narrative Crafter | `inherit` | Deep reasoning, strong writing — runs on the session's best model |
-| Analytical/Precise | QA Reviewer | `inherit` | Final gate must never run on a weaker model than the builder |
-| Broad Knowledge | Career Strategist, Interview Strategist, Amplify Strategist | `inherit` | Industry expertise, coaching judgment; has WebSearch/WebFetch for live research |
+| High-Capability | Resume Architect, Narrative Crafter | `opus` | Deep reasoning, strong writing |
+| Analytical/Precise | QA Reviewer | `opus` | Final gate must never run on a weaker model than the builder |
+| Broad Knowledge | Career Strategist, Interview Strategist, Amplify Strategist | `opus` | Industry expertise, coaching judgment; has WebSearch/WebFetch for live research |
 
 ## Workflow Gates
 

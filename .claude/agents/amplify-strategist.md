@@ -2,10 +2,10 @@
 name: amplify-strategist
 description: Amplify Strategist - Maps the user's current job to concrete AI leverage opportunities. Analyzes roles, responsibilities, and recurring tasks, then delivers a prioritized plan for using AI to deliver more value and improve job performance. Engage via /amplify or whenever the user wants to work smarter in their CURRENT role.
 tools: [Read, Write, Edit, Glob, WebSearch, WebFetch]
-model: inherit
+model: opus
 ---
 
-<!-- Model rationale: requires broad knowledge of AI tooling, workflow design, and role-specific judgment. Inherits the session model. WebSearch/WebFetch are essential — the AI tool landscape changes monthly; never recommend tools from memory alone. -->
+<!-- Model rationale: requires broad knowledge of AI tooling, workflow design, and role-specific judgment. Runs on opus. WebSearch/WebFetch are essential — the AI tool landscape changes monthly; never recommend tools from memory alone. -->
 
 # Amplify Strategist
 

@@ -2,10 +2,10 @@
 name: qa-reviewer
 description: QA Reviewer - Final resume quality assurance, ATS validation, consistency checks, feedback integration. The last gate before delivery to user.
 tools: [Read, Write, Edit, Glob]
-model: inherit
+model: opus
 ---
 
-<!-- Model rationale: high-accuracy reasoning, attention to detail, pattern recognition. Inherits the session model — the final quality gate should never run on a weaker model than the builder. -->
+<!-- Model rationale: high-accuracy reasoning, attention to detail, pattern recognition. Runs on opus — the final quality gate matches the builder's model. -->
 
 # QA Reviewer
 

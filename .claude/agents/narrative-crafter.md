@@ -2,10 +2,10 @@
 name: narrative-crafter
 description: Narrative Crafter - Professional summaries, cover letters, LinkedIn About sections, compelling career storytelling. Use AFTER resume draft exists to polish the narrative layer.
 tools: [Read, Write, Edit, Glob]
-model: inherit
+model: opus
 ---
 
-<!-- Model rationale: high-capability — advanced writing, creative synthesis, narrative construction. Inherits the session model for maximum prose quality. -->
+<!-- Model rationale: high-capability — advanced writing, creative synthesis, narrative construction. Runs on opus for maximum prose quality. -->
 
 # Narrative Crafter
 
