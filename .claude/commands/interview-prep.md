@@ -17,8 +17,8 @@ You are kicking off interview preparation for a Career Architect user.
    - If no brief exists at all, prompt: "No job analysis found — run `/analyze-job` first, then rerun this command."
    - **Pass the full contents of the keyword brief to the Interview Strategist.** The agent must not ask questions that this file already answers (company, role title, level, requirements, keyword tiers, gap analysis).
 
-3. Check for an existing interview prep file: `profile/interview-prep.md`
-   - If it exists, ask: "An interview prep session already exists for this user — continue where we left off or start fresh?"
+3. Check for an existing interview prep file: `job-targets/{job-slug}/interview-prep.md`
+   - If it exists, ask: "An interview prep session already exists for this job — continue where we left off or start fresh?"
 
 ## Execution
 
@@ -39,7 +39,7 @@ Invoke the **Interview Strategist** agent to run the full session:
    - **1 week**: Focused plan covering behavioral, role-specific, and one full mock
    - **2+ weeks**: Full plan across all modules with progressive mock difficulty
 
-4. **STAR Story Bank** — Build or populate `profile/interview-prep.md` with:
+4. **STAR Story Bank** — Build or populate `job-targets/{job-slug}/interview-prep.md` with:
    - 8–10 reusable stories anchored in the user's actual experience
    - Each story tagged to the behavioral themes it covers
    - Quantified results wherever possible
@@ -55,7 +55,7 @@ Invoke the **Interview Strategist** agent to run the full session:
 
 ## Output
 
-Save all prep materials to: `profile/interview-prep.md`
+Save all prep materials to: `job-targets/{job-slug}/interview-prep.md` — interview prep is a per-job artifact and lives in that job's directory. When building the STAR story bank, check other `job-targets/*/interview-prep.md` files and reuse/adapt existing stories rather than rewriting from scratch.
 
 Include:
 - Interview details (company, role, date, stage)

@@ -186,7 +186,7 @@ End every session with:
 
 ## Output Files
 
-Save session notes and prep materials to `profile/interview-prep.md`:
+Save session notes and prep materials to `job-targets/{slug}/interview-prep.md` (per-job artifact — reuse STAR stories from other jobs' prep files where they fit):
 
 ```markdown
 # Interview Prep: [Your Name]

@@ -112,6 +112,7 @@ flowchart TD
     subgraph JT["job-targets/{slug}/  (one directory per job)"]
         K["job-description.txt<br/>keywords.md"]
         O["resume.md<br/>cover-letter.md<br/>qa-report.md"]
+        P["interview-prep.md"]
     end
 
     C --> K
@@ -119,7 +120,8 @@ flowchart TD
     D --> O
     D -->|"profile/linkedin-about.md"| E["/career-strategy"]
     E -->|"profile/job-search-strategy.md"| F["/interview-prep"]
-    O -.-> F
+    K -.-> F
+    F --> P
     R["/review-resume"] -.->|existing resume feedback| D
 
     A -.-> M["/amplify"]
@@ -159,7 +161,7 @@ Every file the harness produces:
 | `profile/profile.md` | Your career goals, background, target roles |
 | `profile/skills.md` | Full skill inventory with gap analysis |
 | `profile/job-search-strategy.md` | Channels, company tiers, 30-day plan |
-| `profile/interview-prep.md` | Prep plan, STAR bank, mock scores, action items |
+| `job-targets/{slug}/interview-prep.md` | Prep plan, STAR bank, mock scores, action items |
 | `profile/amplify-plan.md` | Task inventory, AI plays, measurement log, guardrails |
 | `profile/linkedin-about.md` | LinkedIn About section (one profile, updated per target role) |
 | `job-targets/{slug}/job-description.txt` | The raw job posting |
@@ -215,7 +217,7 @@ Any agent will halt work and route back if:
 ├── team-config.json      # Agent roster and workflow config
 profile/                  # Your profile, skills, strategies, amplify plan
 job-targets/              # One {slug}/ directory per job: description, keywords,
-                          # resume, cover letter, QA report
+                          # resume, cover letter, QA report, interview prep
 patterns_library/         # Reusable resume patterns and templates
 CLAUDE.md                 # Team philosophy, workflow rules, stop-the-line conditions
 ```

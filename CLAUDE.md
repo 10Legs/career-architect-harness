@@ -87,7 +87,7 @@ Work **MUST STOP** if:
 ├── skills/         # Model-invoked domain expertise
 profile/            # Your profile, skill inventory, strategies, amplify plan
 job-targets/        # One {slug}/ dir per job: description, keywords, resume,
-                    # cover letter, QA report
+                    # cover letter, QA report, interview prep
 patterns_library/   # Reusable resume patterns and templates
 ```
 
